@@ -10103,10 +10103,6 @@ section.resume-section .resume-section-content {
   width: 100%;
 }
 
-section.resume-section .resume-section-content-skill {
-  width: 25%;
-}
-
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
@@ -10122,12 +10118,19 @@ section.resume-section .resume-section-content-skill {
 
   .column {
     float: left;
-    width: 25%;
+    width: 30%;
+    padding: 10px;
   }
   
   .row:after {
     content: "";
     display: table;
     clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
   }
 }
